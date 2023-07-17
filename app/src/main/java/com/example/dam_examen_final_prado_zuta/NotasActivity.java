@@ -9,7 +9,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import com.example.dam_examen_final_prado_zuta.databinding.ActivityNotasBinding;
 
-public class NotasActivity extends AppCompatActivity {
+public class NotasActivity extends AppCompatActivity implements NotasInteractionListener {
 
 private ActivityNotasBinding binding;
 
@@ -31,4 +31,18 @@ private ActivityNotasBinding binding;
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
 
+    @Override
+    public void editNotaClick(Nota nota) {
+
+    }
+
+    @Override
+    public void eliminaNotaClick(Nota nota) {
+
+    }
+
+    @Override
+    public void favoritaNotaClick(Nota nota) {
+
+    }
 }
